@@ -198,8 +198,8 @@ export default function Page() {
         </div>
 
         {/* element merah */}
-        <div className="absolute bottom-16 w-32 h-80 bg-gradient-to-b from-secondary to-[#5E0606] rounded-tr-4xl rounded-bl-4xl -z-10"></div>
-        <div className="absolute right-10 bottom-16 w-32 h-80 bg-gradient-to-b from-secondary to-[#5E0606] rounded-tr-4xl rounded-bl-4xl -z-10"></div>
+        <div className="hidden xl:absolute bottom-16 w-32 h-80 bg-gradient-to-b from-secondary to-[#5E0606] rounded-tr-4xl rounded-bl-4xl -z-10"></div>
+        <div className="hidden xl:absolute right-10 bottom-16 w-32 h-80 bg-gradient-to-b from-secondary to-[#5E0606] rounded-tr-4xl rounded-bl-4xl -z-10"></div>
       </section>
 
       {/* Sasaran Produk */}
@@ -210,7 +210,7 @@ export default function Page() {
             {/* Card 1 */}
             <div className="absolute top-10 left-10 2xl:-left-5 rotate-[-12deg] shadow-lg shadow-primary rounded-2xl">
               <Image
-                src="/oncom_2.JPG"
+                src="/oncom_3.JPG"
                 alt="Cracker 3"
                 width={220}
                 height={420}
@@ -220,8 +220,8 @@ export default function Page() {
             {/* Card 2 */}
             <div className="absolute top-5 left-25 2xl:left-15 rotate-[3deg] shadow-lg shadow-primary rounded-2xl">
               <Image
-                src="/oncom_1.JPG"
-                alt="Cracker 2"
+                src="/oncom_3.JPG"
+                alt="Cracker  2"
                 width={220}
                 height={420}
                 className="rounded-2xl shadow-lg h-[20rem] w-[12rem] object-cover"
@@ -266,7 +266,7 @@ export default function Page() {
         <div className="w-full flex flex-col xl:flex-row 2xl:flex-row items-center gap-10 mb-6">
           <div className="xl:w-2/5 2xl:w-2/5">
             <Image
-              src="/manfaat_1.png"
+              src="/oncom_3.JPG"
               alt="Manfaat 1"
               width="2400"
               height="1600"
@@ -319,8 +319,8 @@ export default function Page() {
             <h1 className="font-extrabold text-3xl">Ekonomi</h1>
             <ul className="list-disc list-inside pl-4 text-xl">
               <li>Membantu mencegah anemia.</li>
-              <li>Menjaga sistem imun & metabolisme tubuh. .</li>
-              <li>Menyehatkan saluran pencernaan</li>
+              <li>Menjaga sistem imun & metabolisme tubuh.</li>
+              <li>Menyehatkan saluran pencernaan.</li>
             </ul>
           </div>
         </div>
@@ -331,27 +331,13 @@ export default function Page() {
         <h1 className="font-extrabold text-4xl text-center mb-6">
           Kenali Lebih Dekat Onka Crackers Sandwich Lewat Galeri Kami
         </h1>
-        <div className="grid grid-cols-1 xl:grid-cols-3 2xl:grid-cols-3 gap-6">
-          <Image
-            src="/oncom_2.JPG"
-            alt="Cracker 3"
-            width={1000}
-            height={1000}
-            className="rounded-tr-4xl rounded-bl-4xl shadow-lg h-[25rem] w-full object-cover"
-          />
+        <div className="w-full max-w-6xl mx-auto">
           <Image
             src="/oncom_3.JPG"
             alt="Cracker 3"
             width={1000}
             height={1000}
-            className="rounded-tr-4xl rounded-bl-4xl shadow-lg h-[30rem] w-full object-cover shadow-primary"
-          />
-          <Image
-            src="/oncom_1.JPG"
-            alt="Cracker 3"
-            width={1000}
-            height={1000}
-            className="rounded-tr-4xl rounded-bl-4xl shadow-lg h-[25rem] w-full object-cover"
+            className="rounded-tr-4xl rounded-bl-4xl shadow-lg h-[30rem] xl:h-[50rem] w-full object-cover shadow-primary"
           />
         </div>
       </section>
@@ -388,13 +374,15 @@ export default function Page() {
             sih nih!
           </p>
           <div className="flex items-center mt-10">
-            <Image
-              src="/profile.jpg"
-              alt="Profile"
-              width={100}
-              height={100}
-              className="w-24 h-24 rounded-full object-cover"
-            />
+            <div className="rounded-full bg-primary p-2">
+              <Image
+                src="/users.svg"
+                alt="Profile"
+                width={100}
+                height={100}
+                className="w-24 h-24 rounded-full object-cover"
+              />
+            </div>
             <div className="ml-6">
               <h2 className="font-bold text-2xl">Lala</h2>
               <p className="text-lg">19 tahun</p>
