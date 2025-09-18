@@ -210,7 +210,7 @@ export default function Page() {
             {/* Card 1 */}
             <div className="absolute top-10 left-10 2xl:-left-5 rotate-[-12deg] shadow-lg shadow-primary rounded-2xl">
               <Image
-                src="/oncom_3.JPG"
+                src="/sasaran_2.png"
                 alt="Cracker 3"
                 width={220}
                 height={420}
@@ -230,7 +230,7 @@ export default function Page() {
             {/* Card 3 */}
             <div className="absolute top-5 left-40 2xl:left-40 rotate-[12deg] shadow-lg shadow-primary rounded-2xl">
               <Image
-                src="/oncom_3.JPG"
+                src="/sasaran_1.jpg"
                 alt="Cracker 1"
                 width={220}
                 height={420}
@@ -244,14 +244,25 @@ export default function Page() {
             <h2 className="text-4xl font-extrabold text-[#6B2C0F] mb-4">
               Sasaran Produk
             </h2>
-            <p className="text-lg text-gray-800 leading-relaxed">
+            <div className="text-lg text-gray-800 leading-relaxed">
               Produk ini diformulasikan khusus untuk remaja putri, kelompok yang
               rentan mengalami anemia karena kebutuhan zat besi yang tinggi pada
               masa pertumbuhan dan menstruasi. Data menunjukkan sekitar 32%
               remaja putri di Indonesia berisiko mengalami anemia (Kemenkes,
               2018). Dengan Onka Crackers Sandwich, remaja dapat menikmati snack
-              enak sembari menjaga asupan zat besi harian.
-            </p>
+              enak sembari menjaga asupan zat besi harian. <br />
+              Dalam satu sajian Onka Crackers (15 Gram) mengandung :
+              <ul className="list-disc list-inside">
+                <li>Energi 40 kkal</li>
+                <li>Lemak 3 gram</li>
+                <li>Protein 1 gram</li>
+                <li>Karbohidrat 7 gram</li>
+                <li>Serat 1 gram</li>
+                <li>Natrium 23 gram</li>
+                <li>Vitamin C 3%</li>
+                <li>Zat besi 3%</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -318,9 +329,11 @@ export default function Page() {
           <div className="xl:w-3/5 2xl:w-3/5 p-6 py-40 xl:py-0 2xl:py-0 bg-gradient-to-b from-primary to-[#FFDC6E] rounded-tr-4xl rounded-bl-4xl h-62 flex flex-col justify-center gap-6">
             <h1 className="font-extrabold text-3xl">Ekonomi</h1>
             <ul className="list-disc list-inside pl-4 text-xl">
-              <li>Membantu mencegah anemia.</li>
-              <li>Menjaga sistem imun & metabolisme tubuh.</li>
-              <li>Menyehatkan saluran pencernaan.</li>
+              <li>Berdayakan pangan lokal bernilai tambah.</li>
+              <li>Peluang UMKM berbasis pangan sehat.</li>
+              <li>
+                Berpotensi masuk pasar domestik & kompetisi inovasi pangan.
+              </li>
             </ul>
           </div>
         </div>
@@ -331,13 +344,20 @@ export default function Page() {
         <h1 className="font-extrabold text-4xl text-center mb-6">
           Kenali Lebih Dekat Onka Crackers Sandwich Lewat Galeri Kami
         </h1>
-        <div className="w-full max-w-6xl mx-auto">
+        <div className="flex flex-col 2xl:flex-row items-center justify-center 2xl:gap-0 gap-10">
           <Image
             src="/oncom_3.JPG"
             alt="Cracker 3"
             width={1000}
             height={1000}
-            className="rounded-tr-4xl rounded-bl-4xl shadow-lg h-[30rem] xl:h-[50rem] w-full object-cover shadow-primary"
+            className="rounded-tr-4xl rounded-bl-4xl shadow-lg h-[30rem] xl:h-[40rem] w-full xl:mx-30 object-cover shadow-primary"
+          />
+          <Image
+            src="/sasaran_2.png"
+            alt="Cracker 3"
+            width={1000}
+            height={1000}
+            className="rounded-tr-4xl rounded-bl-4xl shadow-lg h-[30rem] xl:h-[40rem] w-full xl:mx-30 object-cover shadow-primary"
           />
         </div>
       </section>
