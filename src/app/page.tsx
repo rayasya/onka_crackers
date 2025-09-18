@@ -460,7 +460,15 @@ export default function Page() {
             <p className="text-white">onkacrackers@gmail.com</p>
           </div>
         </div>
-        <p className="text-center mt-6 text-3xl">
+        <p className="text-center mt-6 text-xl xl:text-3xl">
+          Made by: <br />
+          <ul className="list-disc list-inside">
+            <li>Ummu Kamilah</li>
+            <li>Dinar Dwi Hapsari</li>
+            <li>Aulia Zahra Mufida</li>
+          </ul>
+        </p>
+        <p className="text-center mt-6 text-2xl xl:text-3xl">
           Bersama Lawan Anemia melalui Camilan Sehat!
         </p>
       </section>
