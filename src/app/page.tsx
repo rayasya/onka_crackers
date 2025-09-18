@@ -5,32 +5,32 @@ export default function Page() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="p-10 h-screen">
-        <div className="bg-primary py-6 px-10 rounded-3xl h-full flex items-center relative">
+      <section className="p-5 lg:p-10 h-screen">
+        <div className="bg-primary py-6 px-10 rounded-3xl h-screen lg:h-full flex flex-col lg:flex-row items-center relative">
           {/* Hero kiri */}
-          <div className="flex flex-col gap-6 w-3/5 h-full">
-            <div className="bg-white p-4 w-fit rounded-full">
+          <div className="flex flex-col gap-3 lg:gap-6 w-full lg:w-3/5 h-full">
+            <div className="bg-white p-2 lg:p-4 w-fit rounded-full">
               <Image
                 src="/logo.png"
                 alt="Logo"
-                width={100}
-                height={100}
-                className="rounded-full"
+                width={1000}
+                height={1000}
+                className="rounded-full size-10 lg:size-20"
               />
             </div>
-            <p className="bg-white/90 p-4 w-fit rounded-full font-black text-xl text-primary px-10">
+            <p className="bg-white/90 p-2 lg:p-4 w-fit rounded-full font-black lg:text-xl text-primary px-5 lg:px-10">
               Onka Crackers Sandwich
             </p>
-            <p className="text-[5rem] text-white font-black">
+            <p className="text-2xl lg:text-[5rem] text-white font-black">
               Bersama Lawan <span className="text-secondary">Anemia</span>
               <br />
               Melalui Camilan Sehat!
             </p>
-            <p className="text-white text-4xl font-extrabold">
+            <p className="text-white text-2xl lg:text-4xl font-extrabold">
               Selamat Datang di
               <span className="text-foreground"> Onka Crackers Sandwich</span>
             </p>
-            <p className="text-3xl">
+            <p className="lg:text-3xl">
               Camilan sehat berbahan lokal oncom dan daun katuk yang
               diformulasikan untuk membantu mencegah anemia pada remaja putri.
               Rasanya enak, kemasan praktis, dan pastinya bergizi.
@@ -38,10 +38,10 @@ export default function Page() {
           </div>
 
           {/* Hero kanan */}
-          <div className="relative w-2/5">
+          <div className="relative w-full lg:w-2/5 mt-10 lg:mt-0">
             {/* Background miring */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="bg-gradient-to-b from-secondary/40 to-[#5E0606]/40 p-4 w-[650px] h-[650px] rounded-tr-[10rem] rounded-bl-[10rem] rotate-15" />
+              <div className="bg-gradient-to-b from-secondary/40 to-[#5E0606]/40 p-4 w-[350px] h-[350px] lg:w-[650px] lg:h-[650px] rounded-tr-[10rem] rounded-bl-[10rem] rotate-15" />
             </div>
 
             {/* Foreground dengan image */}
@@ -51,23 +51,23 @@ export default function Page() {
           </div>
 
           {/* CTA to next sextion */}
-          <div className="absolute -bottom-7 -left-7 bg-foreground border-[30px] border-white rounded-full p-5 text-white font-extrabold text-3xl">
+          <div className="text-center lg:text-left absolute -bottom-43 lg:-bottom-7 lg:-left-7 bg-foreground border-[30px] border-white rounded-full p-5 text-white font-extrabold text-3xl">
             <p>Apa Itu Onka Crackers Sandwich?</p>
           </div>
         </div>
       </section>
 
       {/* Apa itu */}
-      <section className="px-10 flex flex-col gap-6">
+      <section className="mt-50 lg:mt-0 px-10 flex flex-col gap-6">
         <p className="text-2xl">
           Onka Crackers Sandwich adalah camilan inovatif berbahan dasar oncom
           dan daun katuk. Nama ONKA sendiri merupakan singkatan dari Oncom dan
           Katuk, dua bahan lokal kaya gizi yang dipadukan dengan rasa modern.
         </p>
-        <div className="grid grid-cols-3 gap-10">
-          <div className="bg-gradient-to-b from-primary to-[#FFDC6E] p-4 rounded-tr-4xl rounded-bl-4xl flex items-start justify-between gap-6">
-            <div className="relative size-60">
-              <div className="rounded-full relative bg-gradient-to-b from-primary to-white p-4 size-50 mt-5"></div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          <div className="bg-gradient-to-b from-primary to-[#FFDC6E] p-4 rounded-tr-4xl rounded-bl-4xl flex items-start justify-between gap-6 ">
+            <div className="relative size-30 lg:size-60">
+              <div className="rounded-full relative bg-gradient-to-b from-primary to-white p-4 size-30 lg:size-50 mt-5"></div>
               <Image
                 src="/oncom.png"
                 alt="Oncom"
@@ -84,8 +84,8 @@ export default function Page() {
             </div>
           </div>
           <div className="bg-gradient-to-b from-primary to-[#FFDC6E] p-4 rounded-tr-4xl rounded-bl-4xl flex items-start justify-between gap-6">
-            <div className="relative size-60">
-              <div className="rounded-full relative bg-gradient-to-b from-primary to-white p-4 size-50 mt-5"></div>
+            <div className="relative size-30 lg:size-60">
+              <div className="rounded-full relative bg-gradient-to-b from-primary to-white p-4 size-30 lg:size-50 mt-5"></div>
               <Image
                 src="/katuk.png"
                 alt="Katuk"
@@ -102,8 +102,8 @@ export default function Page() {
             </div>
           </div>
           <div className="bg-gradient-to-b from-primary to-[#FFDC6E] p-4 rounded-tr-4xl rounded-bl-4xl flex items-start justify-between gap-6">
-            <div className="relative size-60">
-              <div className="rounded-full relative bg-gradient-to-b from-primary to-white p-4 size-50 mt-5"></div>
+            <div className="relative size-30 lg:size-60">
+              <div className="rounded-full relative bg-gradient-to-b from-primary to-white p-4 size-30 lg:size-50 mt-5"></div>
               <Image
                 src="/coklat.png"
                 alt="Coklat"
@@ -208,7 +208,7 @@ export default function Page() {
           {/* Bagian Gambar */}
           <div className="relative w-100 h-100">
             {/* Card 1 */}
-            <div className="absolute top-10 -left-5 rotate-[-12deg] shadow-lg shadow-primary rounded-2xl">
+            <div className="absolute top-10 left-10 lg:-left-5 rotate-[-12deg] shadow-lg shadow-primary rounded-2xl">
               <Image
                 src="/oncom_2.JPG"
                 alt="Cracker 3"
@@ -218,7 +218,7 @@ export default function Page() {
               />
             </div>
             {/* Card 2 */}
-            <div className="absolute top-5 left-15 rotate-[3deg] shadow-lg shadow-primary rounded-2xl">
+            <div className="absolute top-5 left-25 lg:left-15 rotate-[3deg] shadow-lg shadow-primary rounded-2xl">
               <Image
                 src="/oncom_1.JPG"
                 alt="Cracker 2"
@@ -228,7 +228,7 @@ export default function Page() {
               />
             </div>
             {/* Card 3 */}
-            <div className="absolute top-5 left-40 rotate-[12deg] shadow-lg shadow-primary rounded-2xl">
+            <div className="absolute top-5 left-40 lg:left-40 rotate-[12deg] shadow-lg shadow-primary rounded-2xl">
               <Image
                 src="/oncom_3.JPG"
                 alt="Cracker 1"
@@ -263,8 +263,8 @@ export default function Page() {
         </h1>
 
         {/* content 1 */}
-        <div className="w-full flex items-center gap-10 mb-6">
-          <div className="w-2/5">
+        <div className="w-full flex flex-col lg:flex-row items-center gap-10 mb-6">
+          <div className="lg:w-2/5">
             <Image
               src="/manfaat_1.png"
               alt="Manfaat 1"
@@ -273,7 +273,7 @@ export default function Page() {
               className="rounded-b-4xl w-full h-62 rounded-tr-4xl object-cover"
             />
           </div>
-          <div className="w-3/5 p-6 bg-gradient-to-b from-primary to-[#FFDC6E] rounded-tr-4xl rounded-bl-4xl h-62 flex flex-col justify-center gap-6">
+          <div className="lg:w-3/5 p-6 bg-gradient-to-b from-primary to-[#FFDC6E] rounded-tr-4xl rounded-bl-4xl h-62 flex flex-col justify-center gap-6">
             <h1 className="font-extrabold text-3xl">Kesehatan</h1>
             <ul className="list-disc list-inside pl-4 text-xl">
               <li>Membantu mencegah anemia.</li>
@@ -284,8 +284,8 @@ export default function Page() {
         </div>
 
         {/* content 2 */}
-        <div className="w-full flex items-center gap-10 mb-6">
-          <div className="w-3/5 p-6 bg-gradient-to-b from-primary to-[#FFDC6E] rounded-tr-4xl rounded-bl-4xl h-62 flex flex-col justify-center gap-6">
+        <div className="w-full flex flex-col-reverse lg:flex-row items-center gap-10 mb-6">
+          <div className="lg:w-3/5 p-6 bg-gradient-to-b from-primary to-[#FFDC6E] rounded-tr-4xl rounded-bl-4xl h-62 flex flex-col justify-center gap-6">
             <h1 className="font-extrabold text-3xl">Sosial</h1>
             <ul className="list-disc list-inside pl-4 text-xl">
               <li>Edukasi pentingnya camilan sehat berbasis pangan lokal.</li>
@@ -293,7 +293,7 @@ export default function Page() {
               <li>Membiasakan gaya hidup sehat sejak dini.</li>
             </ul>
           </div>
-          <div className="w-2/5">
+          <div className="lg:w-2/5">
             <Image
               src="/manfaat_2.png"
               alt="Manfaat 1"
@@ -305,8 +305,8 @@ export default function Page() {
         </div>
 
         {/* content 3 */}
-        <div className="w-full flex items-center gap-10 mb-6">
-          <div className="w-2/5">
+        <div className="w-full flex flex-col lg:flex-row items-center gap-10 mb-6">
+          <div className="lg:w-2/5">
             <Image
               src="/manfaat_3.png"
               alt="Manfaat 1"
@@ -315,7 +315,7 @@ export default function Page() {
               className="rounded-b-4xl w-full h-62 rounded-tr-4xl object-cover"
             />
           </div>
-          <div className="w-3/5 p-6 bg-gradient-to-b from-primary to-[#FFDC6E] rounded-tr-4xl rounded-bl-4xl h-62 flex flex-col justify-center gap-6">
+          <div className="lg:w-3/5 p-6 bg-gradient-to-b from-primary to-[#FFDC6E] rounded-tr-4xl rounded-bl-4xl h-62 flex flex-col justify-center gap-6">
             <h1 className="font-extrabold text-3xl">Ekonomi</h1>
             <ul className="list-disc list-inside pl-4 text-xl">
               <li>Membantu mencegah anemia.</li>
@@ -331,7 +331,7 @@ export default function Page() {
         <h1 className="font-extrabold text-4xl text-center mb-6">
           Kenali Lebih Dekat Onka Crackers Sandwich Lewat Galeri Kami
         </h1>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <Image
             src="/oncom_2.JPG"
             alt="Cracker 3"
@@ -361,7 +361,7 @@ export default function Page() {
         <h1 className="font-extrabold text-4xl text-center mb-6">
           Apa Kata Mereka
         </h1>
-        <div className="shadow-xl rounded-b-4xl rounded-tr-4xl p-10 px-20 max-w-6xl mx-auto">
+        <div className="shadow-xl rounded-b-4xl rounded-tr-4xl p-10 lg:px-20 max-w-6xl mx-auto">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center">
               {[...Array(5)].map((_, i) => (
@@ -371,7 +371,7 @@ export default function Page() {
                   alt="Star"
                   width={1000}
                   height={1000}
-                  className="w-16 h-16 rounded-full"
+                  className="w-10 h-10 lg:w-16 lg:h-16 rounded-full"
                 />
               ))}
             </div>
@@ -380,7 +380,7 @@ export default function Page() {
               alt="Quote"
               width={1000}
               height={1000}
-              className="w-16 h-16"
+              className="w-10 h-10 lg:w-16 lg:h-16"
             />
           </div>
           <p className="font-semibold text-2xl">
@@ -403,8 +403,8 @@ export default function Page() {
         </div>
 
         {/* element merah */}
-        <div className="absolute bottom-16 w-32 h-80 bg-gradient-to-b from-secondary to-[#5E0606] rounded-tr-4xl rounded-bl-4xl -z-10"></div>
-        <div className="absolute right-10 bottom-16 w-32 h-80 bg-gradient-to-b from-secondary to-[#5E0606] rounded-tr-4xl rounded-bl-4xl -z-10"></div>
+        <div className="hidden lg:absolute bottom-16 w-32 h-80 bg-gradient-to-b from-secondary to-[#5E0606] rounded-tr-4xl rounded-bl-4xl -z-10"></div>
+        <div className="hidden lg:absolute right-10 bottom-16 w-32 h-80 bg-gradient-to-b from-secondary to-[#5E0606] rounded-tr-4xl rounded-bl-4xl -z-10"></div>
       </section>
 
       {/* CTA */}
@@ -413,7 +413,7 @@ export default function Page() {
           <h1 className="text-3xl font-extrabold">
             Mari Dukung Generasi Bebas Anemia
           </h1>
-          <p className="text-2xl mt-3">
+          <p className="text-lg lg:text-2xl mt-3">
             Onka Crackers Sandwich bukan sekadar camilan. Ini adalah langkah
             nyata untuk mencetak generasi yang sehat, cerdas, dan produktif.
           </p>
