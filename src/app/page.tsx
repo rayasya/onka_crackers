@@ -77,8 +77,8 @@ export default function Page() {
               />
             </div>
             <div className="flex flex-col justify-center h-full gap-4">
-              <p className="font-extrabold text-4xl">Oncom</p>
-              <p className="font-bold text-2xl text-white">
+              <p className="font-extrabold text-3xl lg:text-4xl">Oncom</p>
+              <p className="font-bold text-xl lg:text-2xl text-white">
                 Kaya zat besi & probiotik alami untuk mengatasi anemia
               </p>
             </div>
@@ -95,8 +95,8 @@ export default function Page() {
               />
             </div>
             <div className="flex flex-col justify-center h-full gap-4">
-              <p className="font-extrabold text-4xl">Daun Katuk</p>
-              <p className="font-bold text-2xl text-white">
+              <p className="font-extrabold text-3xl lg:text-4xl">Daun Katuk</p>
+              <p className="font-bold text-xl lg:text-2xl text-white">
                 Kaya vitamin C untuk membantu penyerapan zat besi.
               </p>
             </div>
@@ -113,10 +113,10 @@ export default function Page() {
               />
             </div>
             <div className="flex flex-col justify-center h-full gap-4">
-              <p className="font-extrabold text-4xl">
+              <p className="font-extrabold text-3xl lg:text-4xl">
                 Isian Coklat dan Tepung Pisang
               </p>
-              <p className="font-bold text-2xl text-white">
+              <p className="font-bold text-xl lg:text-2xl text-white">
                 Menambah rasa manis sehat dan prebiotik untuk pencernaan.
               </p>
             </div>
@@ -273,7 +273,7 @@ export default function Page() {
               className="rounded-b-4xl w-full h-62 rounded-tr-4xl object-cover"
             />
           </div>
-          <div className="lg:w-3/5 p-6 bg-gradient-to-b from-primary to-[#FFDC6E] rounded-tr-4xl rounded-bl-4xl h-62 flex flex-col justify-center gap-6">
+          <div className="lg:w-3/5 p-6 py-40 lg:py-0 bg-gradient-to-b from-primary to-[#FFDC6E] rounded-tr-4xl rounded-bl-4xl h-62 flex flex-col justify-center gap-6">
             <h1 className="font-extrabold text-3xl">Kesehatan</h1>
             <ul className="list-disc list-inside pl-4 text-xl">
               <li>Membantu mencegah anemia.</li>
@@ -285,7 +285,7 @@ export default function Page() {
 
         {/* content 2 */}
         <div className="w-full flex flex-col-reverse lg:flex-row items-center gap-10 mb-6">
-          <div className="lg:w-3/5 p-6 bg-gradient-to-b from-primary to-[#FFDC6E] rounded-tr-4xl rounded-bl-4xl h-62 flex flex-col justify-center gap-6">
+          <div className="lg:w-3/5 p-6 py-40 lg:py-0 bg-gradient-to-b from-primary to-[#FFDC6E] rounded-tr-4xl rounded-bl-4xl h-62 flex flex-col justify-center gap-6">
             <h1 className="font-extrabold text-3xl">Sosial</h1>
             <ul className="list-disc list-inside pl-4 text-xl">
               <li>Edukasi pentingnya camilan sehat berbasis pangan lokal.</li>
@@ -315,7 +315,7 @@ export default function Page() {
               className="rounded-b-4xl w-full h-62 rounded-tr-4xl object-cover"
             />
           </div>
-          <div className="lg:w-3/5 p-6 bg-gradient-to-b from-primary to-[#FFDC6E] rounded-tr-4xl rounded-bl-4xl h-62 flex flex-col justify-center gap-6">
+          <div className="lg:w-3/5 p-6 py-40 lg:py-0 bg-gradient-to-b from-primary to-[#FFDC6E] rounded-tr-4xl rounded-bl-4xl h-62 flex flex-col justify-center gap-6">
             <h1 className="font-extrabold text-3xl">Ekonomi</h1>
             <ul className="list-disc list-inside pl-4 text-xl">
               <li>Membantu mencegah anemia.</li>
@@ -380,7 +380,7 @@ export default function Page() {
               alt="Quote"
               width={1000}
               height={1000}
-              className="w-10 h-10 lg:w-16 lg:h-16"
+              className="hidden lg:block lg:w-16 lg:h-16"
             />
           </div>
           <p className="font-semibold text-2xl">
